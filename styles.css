@@ -1,0 +1,97 @@
+/* Polices persos */
+
+@font-face {
+    font-family: 'NewCicle';
+    src:url(assets/fonts/New_Cicle_Fina-webfont.ttf)
+}
+
+@font-face {
+    font-family: 'Tangerine_Bold';
+    src: url(assets/fonts/Tangerine_Bold.ttf);
+}
+
+/* Éléments de base  */
+
+body {
+    font-family: 'NewCicle';
+    text-align: center;
+    margin: 0;
+    padding: O;
+    color:black;
+}
+
+h1 {
+    font-family: 'Tangerine_Bold';
+    font-size: 5em;
+    margin: 5px;
+}
+
+h4 {
+    margin: 15px;
+    font-size: 1.1em;
+}
+
+/* Header */
+
+header {
+    padding: 40px 0 0 0;
+}
+
+header p {
+    font-size: 1.3em;
+    padding: 10px 0 0 0;
+}
+
+ /* Body */ 
+
+#main-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap:20px;
+}
+
+#galery {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.col {
+    max-width: 33%;
+    flex: auto;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+ /* Boutons */
+  
+ /* Footer */
+
+ footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    padding: 100px;
+ }
+
+ footer li img {
+    height: 25px;
+    width: 25px; 
+}
+
+ footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+ }
