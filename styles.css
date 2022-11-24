@@ -131,18 +131,21 @@ header p {
     gap: 10px;
  }
 
- /* Responsive */
 
- @media screen and (max-width: 600px) {
+@media screen and (min-width: 300px) and  (max-width: 600px) {
+
+    #galery {
+        flex-wrap: wrap;
+    }
     .col {
         flex: 100%;
         max-width: 100%;
     }
 }
 
-@media screen and (max-width: 800px) {
-    .col {
-        flex: 100%;
-        max-width: 100%;
+@media screen and (min-width: 600px) and (max-width: 1250px) {
+
+    #galery {
+        flex-wrap: unset;
     }
-}
+} 
