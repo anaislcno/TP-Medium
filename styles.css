@@ -12,6 +12,10 @@
 
 /* Éléments de base  */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'NewCicle';
     text-align: center;
@@ -71,7 +75,38 @@ header p {
 }
 
  /* Boutons */
-  
+
+.img-container {
+    position: relative;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    opacity: 0;
+    color: white;
+    transition: .5s;
+    font-size: 1em;
+    padding: 20px 20px 20px 20px;
+    margin: 0px 0px 4px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.overlay img {
+    width: 20px;
+    height: 20px;
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+}
+
  /* Footer */
 
  footer {
@@ -95,3 +130,19 @@ header p {
     flex-direction: row;
     gap: 10px;
  }
+
+ /* Responsive */
+
+ @media screen and (max-width: 600px) {
+    .col {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .col {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
